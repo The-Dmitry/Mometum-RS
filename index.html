@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/owfont-regular.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Momentum</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="player">
+                <div class="player-container">
+                    <div class="player-controls">
+                        <button class="play-prev player_button"></button>
+                        <button class="play player_button"></button>
+                        <button class="play-next player_button"></button>
+                    </div>
+                    <div class="progress-and-title">
+                        <div class="song-title"></div>
+                        <div class="player-bar">
+                            <div class="player-bar__progress"></div>
+                        </div>
+                    </div>
+                    <div class="player-timing">
+                        <span class="song-current-time"></span>
+                        <span>/</span>
+                        <span class="song-duration"></span>
+                    </div>
+                    <div class="volume-container">
+                        <div class="volume"></div>
+                        <div class="volume-bar">
+                            <div class="volume-bar__progress"></div>
+                        </div>
+                    </div>
+                    <button class="change-content"></button>
+                </div>
+                <ul class="playlist"></ul>
+            </div>
+            <div class="weather">
+                <input type="text" class="city">
+                <div class="weather__container">
+                    <div class="temperature-container">
+                        <div class="temperature"></div>
+                        <i class="weather-icon owf"></i>
+                    </div>
+                    <div class="weather-description"></div>
+                    <div class="wind-speed"></div>
+                    <div class="humidity"></div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="slider-buttons">
+                <button class="slider-prev slider-button"></button>
+                <button class="slider-next slider-button"></button>
+            </div>
+            <div class="time"></div>
+            <div class="date"></div>
+            <div class="greeting-container">
+                <span class="greeting"></span>
+                <input class="greeting__name" type="text" placeholder="Enter name">
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="to-do">
+                <button class="todo__button button"></button>
+                <div class="to-do__container hide-block">
+                    <h2 class="to-do__title">To Do</h2>
+                    <ul class="to-do__list">
+                    </ul>
+                    <div class="input__area">
+                        <input class="to-do__input" type="text" placeholder="Type text ...">
+                        <button class="to-do__confirm">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div class="quote">
+                <button class="quote__button"></button>
+                <div class="quote__text"></div>
+                <div class="quote__author"></div>
+            </div>
+            <div class="settings">
+                <button class="settings__button button"></button>
+                <div class="settings__container hide-block">
+                    <ul class="settings-list">
+                        <li class="settings__item">
+                            <p class="settings-name translate">Language</p>
+                           <button class="language"></button>
+                        </li>
+                        <li class="settings__item">
+                            <p class="settings-name translate">photo source</p>
+                            <select class="api-list" name="image-src">
+                                <option value="gitHub">GitHub</option>
+                                <option value="unsplash">Unsplash API</option>
+                                <option value="flickr">Flickr API</option>
+                            </select>
+                        </li>
+                        <li class="settings__item">
+                            <p class="settings-name translate">Tags photo</p>
+                           <input class="selecet-bg-src" type="text">
+                        </li>
+                        <li class="settings__item">
+                            <p class="settings-name translate">Time</p>
+                            <input class="settings-checkbox" type="checkbox" id="time" checked /><label for="time"></label>
+                        </li>
+                        <li class="settings__item">
+                            <p class="settings-name translate">Date</p>
+                            <input class="settings-checkbox" type="checkbox" id="date" checked /><label for="date"></label>
+                        </li>
+                        <li class="settings__item">
+                            <p class="settings-name translate">Player</p>
+                            <input class="settings-checkbox" type="checkbox" id="player" checked /><label for="player"></label>
+                        </li>
+                        <li class="settings__item">
+                            <p class="settings-name translate">Greeting</p>
+                            <input class="settings-checkbox" type="checkbox" id="greeting" checked /><label for="greeting"></label>
+                        </li>
+                        <li class="settings__item">
+                            <p class="settings-name translate">Weather</p>
+                            <input class="settings-checkbox" type="checkbox" id="weather" checked /><label for="weather"></label>
+                        </li>
+                        <li class="settings__item">
+                            <p class="settings-name translate">Quotes</p>
+                            <input class="settings-checkbox" type="checkbox" id="quotes" checked /><label for="quotes"></label>
+                        </li>
+                        <li class="settings__item">
+                            <p class="settings-name translate">To-do list</p>
+                            <input class="settings-checkbox" type="checkbox" id="to-do" checked /><label for="to-do"></label>
+                        </li>
+                    </ul>
+                    <div class="product-placement">
+                        <a href="https://github.com/The-Dmitry" class="github" target="_blank"><img class="product-img" src="./img/github.svg" alt="github"></a>
+                        <a href="https://rs.school/js" class="rs-school" target="_blank"><img class="product-img" src="./img/rs_school.svg" alt="rs-school"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="js/index.js"></script>
+</body>
+</html>
+
